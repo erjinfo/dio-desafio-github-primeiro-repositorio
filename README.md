@@ -3,6 +3,8 @@
 
 ##### Usando o Typora e editando formatação estilo html.
 
+##### Feito uma pasta (TAG) e anotação de tudo aprendido para compartilhar conhecimento
+
 ## Links Uteis
 [Sintaxe_Básica_Markdown](https://www.markdownguide.org/basic-syntax/)
 
