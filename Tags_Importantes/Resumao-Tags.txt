@@ -1,0 +1,41 @@
+Para Versionar um codigo partindo do Zero.
+Comandos importantes:
+win -------------------- linux
+> dir = mostrar pasta    ls
+> cd nome da pasta *importante* se contiver espaço deve usar barra \ ex = e\ r\ j/ para acessar a pasta e r j
+> cd .. volta pasta
+> cls apaga a tela do bash ctrl + L
+> *usar o Tab* para auto completar - muito util.
+> mkdir nome cria essa pasta em ambos
+> echo nome > nome.tx (ambos criar um arquivo do tipo txt)
+> rmdir nome /s /q remover pasta (win)--- rm -r f nome remover pasta (linux)
+
+___________________________________________________________________
+
+Usa TREE (arvores) Aponta p blob (Bolhas) - SHA1 (Metadados) esse sha1 se mudar algo nele, altera assim toda Estrutura
+*blob encasula e o commit aponta para Tree -> parent -> autor -> mensagem -> timestamp, Eles tbm tem Sha1 como blob (arquivo mais seguro). 
+chave SSH (dupla chave publica e privada)
+
+______________________________________________________________________
+comando via Git Bash para por a chave no PC
+ssh-keygen -t ed25519 -C email@email.com (ENTER) na sequencia criar a senha e (ENTER)
+
+comando para pegar a chave publica.
+cat id-ed25519.pub --> com esse resultado, se copia e vai no site (https://github.com/settings/keys) e cola a chave no new.
+
+-> comando para liberação da nasta .ssh
+eval$(ssh-agent -s) agora passar a chave privada para o agente
+ssh-add id_ed25519
+
+_________________________________________________________________________
+Comandos GIt
+Iniciar o GIT -----------> git init (de um cd para pasta que deseja iniciar e estando nela de esse comando)
+Iniciar o Vercionamento -> git add . (o ponto passa tudo que vc fez)
+Criar em commit ---------> git commit -m(para passar a mensagem) "aqui descreve a mudança feita" (importante para controle) 
+
+Assim que finalizar as edições, deve enviar para nuvem (site GitHub) segue.
+git add .
+git commit -m "Edições feitas para melhoria tal"
+git push origin main (o origin é dado por convençao esse nome, o push empurra para nuvem)
+git status (mostra se falta algo para resolver)
+----> Espero com esse basico ajude quem estiver em duvidas.
